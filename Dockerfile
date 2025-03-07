@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 RUN echo "output_buffering = On" >> /usr/local/etc/php/php.ini
 RUN echo "session.auto_start = 1" >> /usr/local/etc/php/php.ini
 
-COPY apache.conf /etc/apache2/httpd.conf
+# Apache configuration will be mounted via docker-compose
 COPY . /var/www/html/
 
 # Set proper permissions

@@ -15,7 +15,7 @@ services:
       - ./foto_gp:/var/www/html/foto_gp
       - ./foto_kegiatan:/var/www/html/foto_kegiatan
       - ./foto_santri:/var/www/html/foto_santri
-      - ./apache.conf:/etc/apache2/httpd.conf
+      - ./apache.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - db
     networks:
